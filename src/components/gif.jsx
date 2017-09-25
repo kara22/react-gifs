@@ -3,7 +3,11 @@ import React from 'react';
 const Gif = (props) => {
   const url = `https://media.giphy.com/media/${props.giphyId}/giphy.gif`;
   return (
-    <img src={url} alt="" />
+    <img
+      className="gif"
+      src={url}
+      onClick={props.handleClick}
+    />
   );
 };
 
